@@ -1,0 +1,384 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    min-height: 200vh;
+}
+
+
+
+/* NAVBAR */
+header{
+    display: block;
+    height: 90px;
+    background-color: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navBar, .navLeft, .navRight{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
+}
+.navBar{
+    margin: 0 5% 0 5%;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+#arvantioIcon{
+    display: flex;
+    background-image: url('./assets/ArvantioLogo.png');
+    background-size: cover;
+    width: 12rem;
+    height: 1.9rem;
+}
+
+
+
+/* NAVBAR LEFT */
+.navLeft a{
+    color: #cbe3e7;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    padding-bottom: 28.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.navLeft a:hover{
+    border-bottom: 8px solid #165787;
+}
+
+
+/* NAVBAR RIGHT */
+.navRight{
+    display: flex;
+    color: #cbe3e7;
+    align-items: center;
+}
+.navRight button, .vectors button{
+    color: #cbe3e7;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 1.8rem;
+    min-height: 2.5rem;
+    background-color: #ff7300;
+    border: 0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+.navRight button:hover{
+    background-color: #000a58;
+    transition: 0.5s;
+}
+
+
+/* NAVBAR RESPONSIVE */
+.menuToggle{
+    background-image: url('./assets/menuHam.png');
+    background-size: cover;
+    background-position: center;
+    /* background-color: #cbe3e7; */
+    width: 2rem;
+    height: 2rem;
+}
+@media screen and (max-width: 769px){
+    .navBar .navLeft div{
+        display: none;
+    }
+}
+@media screen and (min-width: 769px){
+    .menuToggle{
+        display: none;
+    }
+}
+@media screen and (max-width: 426px){
+    #arvantioIcon{
+        display: flex;
+        background-image: url('./assets/arvantioLogoMini.png');
+        background-size: cover;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .navRight button{
+        color: #cbe3e7;
+        font-size: 0.7rem;
+        font-weight: 500;
+        min-width: 2rem;
+        min-height: 2.2rem;
+        background-image: radial-gradient(100% 100% at 100% 0, #ff7300 0, #000a58 100%);
+        border: 0;
+        border-radius: 12px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 326px){
+    #prueba{
+        display: none;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* PRIMER BANNER */
+.introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: #cbe3e7;
+    background-color: #000000;
+    min-height: 90vh;
+}
+
+.introLeft, .introRight{
+    width: 50%;
+    padding-left: 3rem;
+}
+
+.introLeft h1, .introLeft h3{
+    width: 95%;
+}
+
+.introLeft h1{
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.introLeft h3{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.mainLogo{
+    display: flex;
+    background-image: url('./Assets/ArvantioLogo.png');
+    background-size: cover;
+    width: 25rem;
+    height: 4.1rem;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* ICONS */
+.vectors{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 5% 2rem 5%;
+    justify-content: space-around;
+    gap: 25px;
+    background-color: #171717;
+    color: #FFF1E6;
+    flex-wrap: wrap;
+    /* height: 12rem; */
+}
+.vectors .icons{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.vectors p{
+    font-weight: 200;
+}
+
+.vectors button{
+    background-color: #000a58;
+}
+.vectors button:hover{
+    background-color: #ff7300;
+    transition: 0.5s;
+
+}
+
+.vectors #whatWeOffer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.vectors #whatWeOffer p{
+    margin-top: 10px;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+.vectors #whatWeOffer h1{
+    font-size: 2rem;
+    font-style: oblique;
+    margin-bottom: 1rem;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* PROBLEMS */
+.solutions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.solutions img{
+    width: 100%;
+    height: auto;
+}
+
+.solRight {
+    position: absolute;
+    right: 2rem;
+    width: 68%;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.solRight p{
+    color: #171717;
+    font-size: 1.2rem;
+    padding: 0 5% 2% 5%;
+}
+.solRight ul{
+    color: #171717;
+    font-size: 1.2rem;
+    padding: 0 0 2% 10%;
+}
+.solRight .highlightedPar{
+    color: #ff7300;
+    font-weight: 600;
+}
+.solRight h1{
+    padding: 2% 5% 2% 5%;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000a58;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* PROS VS CONS */
+.prosVsCons h3{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #cbe3e7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.prosVsCons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+    background-color: #171717;
+}
+.cons, .pros{
+    background-color: #171717;
+    border-radius: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+    ;
+    padding: 15px;
+    gap: 15px;
+}
+
+.flashcard{
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flashcard:hover{
+    transform: rotateY(180deg);
+    transition: 0.6s;
+}
+
+.back {
+    width: 100%;
+    min-height: 5rem;
+    padding: 5%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    /* border-radius: 10px; */
+    padding: 10px;
+}
+
+.back{
+    font-size: 0.9rem;
+    background-color: #171717;
+}
+
+.front{
+    width: 55%;
+    min-height: 4rem;
+    padding: 3%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.pros .front {
+    background-color: rgba(7, 147, 70, 0.5);
+    color: #cbe3e7;
+    font-weight: 400;
+}
+
+.cons .front{
+    background-color: rgba(147, 26, 7, 0.5);
+    color: #cbe3e7;
+    font-weight: 400;
+}
+
+
+
+/* Diseño del reverso */
+.back {
+    background-color: #171717;
+    color: #cbe3e7;
+    transform: rotateY(180deg);
+    border-color: #ff7300;
+}
+
