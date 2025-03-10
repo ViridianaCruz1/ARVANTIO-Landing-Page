@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arvantio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -21,12 +22,13 @@
             </section>
 
             <section class="navRight">
-                <div class="navBarButton" id="logIn"><a href=""><button>Iniciar Sesión</button></a></div>
-                <div class="navBarButton" id="prueba"><a href=""><button>Empezar prueba</button></a></div>
+                <div class="navBarButton"><a href=""><button id="logIn">Iniciar Sesión</button></a></div>
+                <div class="navBarButton"><a href=""><button id="prueba">Empezar prueba</button></a></div>
                 <div class="menuToggle" id="menuToggle"></div>
             </section>
         </nav>
     </header>
+
 
     <main>
         <div class="introduction">
@@ -44,7 +46,7 @@
         <section class="vectors">
             <div class="icons" id="whatWeOffer">
                 <h1>¿Qué ofrecemos?</h1>
-                <div class="navBarButton" id="prueba"><a href=""><button>Empezar prueba</button></a></div>
+                <div class="navBarButton"><a href=""><button id="prueba">Empezar prueba</button></a></div>
                 <p>Prueba gratis de 14 días (Cancela cuando quieras)</p>
 
             </div>
@@ -77,31 +79,38 @@
             </div>            
         </section>
 
+        <section class="freeTrial">
+            <h1>¿Te gustaría dejar de darle una mala experiencia a tus residentes y colaboradores?</h1>
+            <h2>Empieza a hacerlo hoy sin problema alguno</h2>
+            <button>Empieza tu prueba gratis hoy</button>
+            <p>Prueba gratis de 14 días - Cancela cuando quieras</p>
+        </section>
+
         <section class="prosVsCons">
             <div class="pros">
                 <h3>Soluciones inteligentes</h3>
                 <div class="grid">
                     <div class="flashcardContainer">
                         <div class="flashcard">
-                            <div class="front" id="card1">Orden y eficiencia</div>
+                            <div class="front" id="card1">✔️  Orden y eficiencia</div>
                             <div class="back">Saber quién visita tus instalaciones y conocer sus necesidades de antemano.</div>
                         </div>
                     </div>
                     <div class="flashcardContainer">
                         <div class="flashcard">
-                            <div class="front" id="card2">Transparencia total</div>
+                            <div class="front" id="card2">✔️  Transparencia total</div>
                             <div class="back">Reportes financieros claros y comunicación abierta con los residentes, fomentando la confianza y evitando conflictos.</div>
                         </div>
                     </div>
                     <div class="flashcardContainer">
                         <div class="flashcard">
-                            <div class="front" id="card3">Solución rápida de problemas</div>
+                            <div class="front" id="card3">✔️  Solución rápida de problemas</div>
                             <div class="back">Gestión eficiente de solicitudes de mantenimiento y seguimiento en tiempo real, para que los problemas se resuelvan rápidamente.</div>
                         </div>
                     </div>
                     <div class="flashcardContainer">
                         <div class="flashcard">
-                            <div class="front" id="card4">Experiencias positivas</div>
+                            <div class="front" id="card4">✔️  Experiencias positivas</div>
                             <div class="back">Residentes felices y satisfechos gracias a la comunicación fluida, pagos en línea y acceso a la información relevante. Esto fortalece el sentido de comunidad y mejora la reputación del residencial.</div>
                         </div>
                     </div>
@@ -114,32 +123,213 @@
                 <div class="grid">
                     <div class="flashcardContainer">
                         <div class="flashcard">
-                            <div class="front" id="card1">Caos y desorden</div>
+                            <div class="front" id="card1">❌ Caos y desorden</div>
                             <div class="back">Toda la información de tu residencial organizada y accesible en un solo lugar, desde estados de cuenta hasta comunicados importantes.</div>
                         </div>
                     </div>
                     <div class="flashcardContainer">
                         <div class="flashcard">
-                            <div class="front" id="card2">Falta de transparencia</div>
+                            <div class="front" id="card2">❌ Falta de transparencia</div>
                             <div class="back">¿Los residentes confían en la gestión financiera? ¿Tienen fácil acceso a información importante sobre su comunidad?</div>
                         </div>
                     </div>
                     <div class="flashcardContainer">
                         <div class="flashcard">
-                            <div class="front" id="card3">Problemas sin resolver</div>
+                            <div class="front" id="card3">❌ Problemas sin resolver</div>
                             <div class="back">¿Las soluciones de mantenimiento se pierden en el olvido? ¿La comunicación con residentes y personal es fluida y efectiva?</div>
                         </div>
                     </div>
                     <div class="flashcardContainer">
                         <div class="flashcard">
-                            <div class="front" id="card4">Experiencias frustrantes</div>
+                            <div class="front" id="card4">❌ Experiencias frustrantes</div>
                             <div class="back">¿Tus residentes están realmente satisfechos con la forma en que se gestiona su residencial? ¿O hay quejas constantes y malentendidos?</div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </div>            
         </section>
+
+
+        <section class="carrusel">
+            <div class="carruselTitle sectionValues">
+                <h2 class="carruselDescription">CONÓCENOS</h2>
+                <h3 class="carruselHeader">
+                    Nuestros principios.
+                </h3>
+            </div>
+            <div class="slider">
+
+                <div class="slide">
+                    <div class="values1">
+                        <h5 class="valuesHeader">Eficiencia y productividad</h5>
+                        <blockquote class="valuesText">
+                            Automatiza tareas tediosas, desde la generación de reportes hasta el seguimiento de pagos, para que puedas enfocarte en lo que realmente importa: mejorar la vida de tu comunidad.
+                        </blockquote>
+                        <address class="valuesFooter">
+                            <img src="./assets/values1.jpg" alt="" class="valuesPhoto" />
+                        </address>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="values2">
+                        <h5 class="valuesHeader">
+                            Transparencia y confianza
+                        </h5>
+                        <blockquote class="valuesText">
+                            Facilita la comunicación abierta y transparente con residentes y personal, evitando malentendidos y fomentando la confianza.
+                        </blockquote>
+                        <address class="valuesFooter">
+                            <img src="./assets/values2.jpg" alt="" class="valuesPhoto" />
+                        </address>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="values3">
+                        <h5 class="valuesHeader">
+                            Toma de decisiones informadas
+                        </h5>
+                        <blockquote class="valuesText">
+                            Accede a reportes financieros detallados y actualizados en tiempo real, para que puedas tomar decisiones estratégicas basados en datos concretos.
+                        </blockquote>
+                        <address class="valuesFooter">
+                            <img src="./assets/values3.jpg" alt="" class="valuesPhoto" />
+                        </address>
+                    </div>
+                </div>
+
+                <button class="sliderBtn sliderBtnLeft">&larr;</button>
+                <button class="sliderBtn sliderBtnRight">&rarr;</button>
+                <div class="dots"></div>
+            </div>
+        </section>
+
+
+        <section class="objectives">
+            <div class="objectivesTitle">
+                <h2 class="objectivesDescription">ARVANTIO Y LOS OBJETIVOS DE DESARROLLO SOSTENIBLE (ODS)</h2>
+                <h3 class="objectivesHeader">
+                    Construyendo Comunidades del Futuro.
+                </h3>
+                <h4 class="objectivesText">En Arvantio, no solo nos preocupamos por facilitar la administracion de tu residencial, sino también por contribuir a un futuro más sostenible. Nuestra plataforma se alinea con el Objetivo de Desarrollo Sostenible (ODS) 9 de la ONU, que busca construir infraestructuras resilientes, promover una industrialización inclusiva y sostenible, y fomentar la innovación.</h4><h4 class="odsBlue">¿Cómo lo logramos?</h4>
+            </div>
+
+            <div class="ods">
+                <div class="odsTabContainer">
+                    <button
+                    class="odsBtn odsTab odsTab--1 odsTab--active"
+                    data-tab="1"
+                    >
+                        <span>01</span>Infraestructura Resiliente
+                    </button>
+                    <button class="odsBtn odsTab odsTab--2" data-tab="2">
+                        <span>02</span>Industrialización Sostenible
+                    </button>
+                    <button class="odsBtn odsTab odsTab--3" data-tab="3">
+                        <span>03</span>Innovación
+                    </button>
+                </div>
+            <div class="odsContent odsContent--1 odsContent--active">
+                <div class="odsIcon odsIcon--1">
+                    <img src="./assets/infraestuctura.png" alt="">
+                </div>
+                <h5 class="odsHeader">
+                    Infraestructura Resiliente.
+                </h5>
+                <p>
+                    Arvantio proporciona una plataforma digital segura y confiable para la gestión de tu comunidad. Al reducir la dependencia del papeleo y los procesos manuales, contribuimos a crear una infraestructura más resiliente y preparada para el futuro.
+                </p>
+            </div>
+
+            <div class="odsContent odsContent--2">
+                <div class="odsIcon odsIcon--2">
+                    <img src="./assets/industrializacion.png" alt="">
+                </div>
+                <h5 class="odsHeader">
+                    Industrialización Sostenible.
+                </h5>
+                <p>
+                    Nuestra plataforma optimiza los procesos administrativos, reduciendo el consumo de papel y mejorando la eficiencia en el uso de recursos. Esto se traduce en una gestión más sostenible y amigable con el medio ambiente.
+                </p>
+            </div>
+
+            <div class="odsContent odsContent--3">
+                <div class="odsIcon odsIcon--3">
+                    <img src="./assets/innovacion.png" alt="">
+                </div>
+                    <h5 class="odsHeader">
+                        Innovación.
+                    </h5>
+                    <p>
+                        Arvantio utiliza tecnología de vanguardia para resolver los desafíos cotidianos de la administración de residenciales. Con funciones como pagos en línea, reservas de amenidades y comunicación digital, fomentando la innovación y modernizamos la forma en que se gestionan las comunidades.
+                    </p>
+                </div>
+            </div>
+            <h4 class="objectivesTextBottom">Al elegir Arvantio, no solo estás invirtiendo en una herramiento que te ahorrará tiempo y dinero, sino que también tiempo y dinero, sino que también estás contribuyendo a un futuro más sostenible para tu comunidad y para el planeta <h4 class="odsBlueBottom">¡Únete a nosotros en este camino hacia un futuro mejor!</h4></h4>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="faq">
+            <h1>Preguntas Frecuentes.   </h1>
+            <div class="faqBigCont">
+                <div class="faqContainer">
+                    <div class="faqHeader" onclick="toggleContent(0)">
+                        <p class="faqIntroText">¿Tengo que instalar algo?</p>
+                        <button class="toggleButton"><img src="./assets/menuPlus.png" alt="" width="30px"></button>
+                    </div>
+                    <div class="faqContent">
+                        <p>No, Arvantio es una aplicación web, lo que significa que se puede usar en cualquier dispositivo y desde cualquier lugar con acceso a internet.</p>
+                    </div>
+                </div>
+                
+                <div class="faqContainer">
+                    <div class="faqHeader" onclick="toggleContent(1)">
+                        <p class="faqIntroText">¿Quién es el dueño de los datos?</p>
+                        <button class="toggleButton"><img src="./assets/menuPlus.png" alt="" width="30px"></button>
+                    </div>
+                    <div class="faqContent">
+                        <p>Tú lo eres, Arvantio no tiene permiso para usar ese contenido o contactar a tus usuarios por ninguna razón. Arvantio es solo una herramienta para que TÚ  administres tu residencial.</p>
+                    </div>
+                </div>
+                
+                <div class="faqContainer">
+                    <div class="faqHeader" onclick="toggleContent(2)">
+                        <p class="faqIntroText">¿Están seguros mis datos?</p>
+                        <button class="toggleButton" id="miBoton"><img src="./assets/menuPlus.png" alt="" width="30px"></button>
+                    </div>
+                    <div class="faqContent">
+                        <p>Sí, Arvantio emplea encriptación HTTPS para asegurar que todos los datos transmitidos entre la aplicación y el servidor estén encriptados. Además, usa Cloudflare y un sistema de protección DDoS (Distributed Denial of Service) interno para monitorear, rastrear y bloquear incluso los ataques más granulares para que la aplicación permanezca resistente a los intentos de interrupción maliciosa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
 
