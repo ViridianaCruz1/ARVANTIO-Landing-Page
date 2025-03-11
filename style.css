@@ -4,7 +4,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    display: flex;
     min-height: 200vh;
 }
 
@@ -793,7 +792,7 @@ header{
 
 
 /* //////////////////////////////////////////////////////////////// */
-/* DESPLEGABLES */
+/* DROP DOWN */
 .faq{
     border-top: 20px solid #000000;
     background-color: #171717;
@@ -844,5 +843,174 @@ header{
     margin-top: 10px;
     padding: 10px;
     border-top: 1px solid #ddd;
-    /* transition: 3s; */
+    width: 90%;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* FORMS E-MAIL */
+.formsEmail{
+    border-top: 20px solid #000000;
+    background-color: #171717;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.formsEmailContainer{
+    margin: 3% 0 3% 5%;
+    padding: 2%;
+    background-color: #104d79d6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: end;
+    vertical-align: middle;
+    position: absolute;
+    left: 4rem;
+}
+
+.rowFormsEmail{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.emailLeft input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #cbe3e7;
+    border-radius: 5px;
+    background-color: #ffffffc0;
+}
+
+.emailLeft button {
+    background-color: #ff7300;
+    color: #cbe3e7;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.emailLeft button:hover {
+    background-color: #fe8c30;
+}
+
+.emailLeft{
+    color: #cbe3e7;
+}
+.emailLeft h1{
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+.emailLeft p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.emailRight img{
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.emailRight{
+    display: flex;
+    justify-content: end;
+    margin-right: 4rem;
+}
+
+
+/* //////////////////////////////////////////////////////////////// */
+/* FOOTER */
+
+/* footer{
+    background-color: black
+    padding: 20px ;
+    text-align: center;
+} */
+
+.footerContainer{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #000000;
+}
+
+
+/* SOCIAL MEDIA */
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.socialMedia a{
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+}
+.socialMedia .icon{
+    background-color: none;
+    background-size: cover;
+}
+#facebookIcon{
+    background-image: url('./assets/facebook.png');
+}
+#instagramIcon{
+    background-image: url('./assets/instagram.png');
+}
+#xIcon{
+    background-image: url('./assets/xlogo.png');
+}
+#youtubeIcon{
+    background-image: url('./assets/ytlogo.png');
+}
+
+/* FOOTER SECOND */
+.footerSecond{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.footerSecond a, .footerSecond p{
+    color: #999;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-right: 18px;
+    text-decoration: none;
+}
+
+/* INFORMACION EXTRA */
+.legalidad{
+    display: flex;
+    justify-content: center;
+
+}
+.legalidad h1{
+    color: #999;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.legalidad p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #999;
+    font-weight: 300;
+    font-size: 10px;
 }

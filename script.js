@@ -110,19 +110,7 @@ tabsContainer.addEventListener('click', function (e) {
 });
 
 ////////////////////////////////////////////////////////
-// function toggleContent(index) {
-//     var contents = document.querySelectorAll(".faqContent");
-//     var buttons = document.querySelectorAll(".toggleButton");
-
-//     // Alternar visibilidad del contenido correspondiente
-//     if (contents[index].style.display === "none" || contents[index].style.display === "") {
-//         contents[index].style.display = "block";
-//         buttons[index].textContent = "−"; // Cambia "+" por "−"
-//     } else {
-//         contents[index].style.display = "none";
-//         buttons[index].textContent = "+"; // Restaura "+"
-//     }
-// }
+//
 
 function toggleContent(index) {
     var contents = document.querySelectorAll(".faqContent");
