@@ -129,3 +129,16 @@ function toggleContent(index) {
         buttons[index].innerHTML = iconPlus;      // Cambiar ícono a "+"
     }
 }
+
+///////////////////////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleccionamos todas las tarjetas
+    const tarjetas = document.querySelectorAll(".flashcard");
+
+    // Añadimos un event listener para cada tarjeta
+    tarjetas.forEach(tarjeta => {
+        tarjeta.addEventListener("click", function () {
+            this.classList.toggle("volteada"); // Alternamos la clase "volteada"
+        });
+    });
+});
