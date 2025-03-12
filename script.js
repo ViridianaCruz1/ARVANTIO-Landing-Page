@@ -131,14 +131,26 @@ function toggleContent(index) {
 }
 
 ///////////////////////////////////////////////////////////////
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Seleccionamos todas las tarjetas
+//     const tarjetas = document.querySelectorAll(".flashcard");
+
+//     // Añadimos un event listener para cada tarjeta
+//     tarjetas.forEach(tarjeta => {
+//         tarjeta.addEventListener("click", function () {
+//             this.classList.toggle("volteada"); // Alternamos la clase "volteada"
+//         });
+//     });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
-    // Seleccionamos todas las tarjetas
     const tarjetas = document.querySelectorAll(".flashcard");
 
-    // Añadimos un event listener para cada tarjeta
-    tarjetas.forEach(tarjeta => {
-        tarjeta.addEventListener("click", function () {
-            this.classList.toggle("volteada"); // Alternamos la clase "volteada"
+    if (tarjetas.length > 0) {
+        tarjetas.forEach(tarjeta => {
+            tarjeta.addEventListener("click", function () {
+                this.classList.toggle("volteada");
+            });
         });
-    });
+    }
 });
