@@ -180,7 +180,8 @@ header{
 /* TABLET AND SMALL LAPTOPS*/
 @media screen and (max-width: 1439px){
     .introduction {
-        padding-top: 9rem;
+        height: auto;
+        padding-top: 6rem;
         display: flex;
         flex-direction: column;
         min-height: 50vh;
@@ -203,8 +204,8 @@ header{
         /* height: 20rem; */
     }
     .introLeft span{
-        width: 6rem;
-        height: 6rem;
+        width: 4rem;
+        height: 4rem;
         background-image: url('./assets/arvantioLogoMini.png')
     }
     .introLeft h1{
@@ -375,7 +376,10 @@ header{
         padding: 0 5% 1% 5%;
     }
 }
-@media screen and (max-width: 585px){
+@media screen and (max-width: 420px){
+    .solRight{
+        left: 0.3rem;
+    }
     .solutions img{
         display: none;
     }
@@ -532,7 +536,26 @@ header{
     background-color: rgba(255, 136, 0, 0.7);
 }
 
-@media screen and (max-width: 426px){
+
+/* PROS VS CONS RESPONSIVE */
+/* LAPTOP S */
+@media screen and (max-width: 1023px){
+    #bigBack {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 795px){
+    #bigBack {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px){
     .prosVsCons{
         display: grid;
         grid-template-columns: 1fr;
@@ -542,19 +565,15 @@ header{
         background-color: black
     }
 
+    .front {
+        width: 70%;
+        min-height: 3.5rem;
+    }
+
     .back {
         width: 90%;
         min-height: 5rem;
-        padding: 1%;
-        position: absolute;
-        backface-visibility: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        text-align: center;
-        background-color: #171717;
-        color: #cbe3e7;
-        transform: rotateY(180deg);
+        padding: 0 1% 0 1%;
         font-size: 0.9rem;
         font-weight: 400;
     }
@@ -664,8 +683,8 @@ header{
     border: none;
     background-color: #b9b9b9;
     opacity: 0.7;
-    height: 1rem;
-    width: 1rem;
+    height: 0.8rem;
+    width: 0.8rem;
     border-radius: 50%;
     margin-right: 1.75rem;
     cursor: pointer;
@@ -692,7 +711,6 @@ header{
     line-height: 1;
     font-size: 15rem;
     font-family: inherit;
-    color: var(--color-primary);
     z-index: -1;
     color: #000a58;
 }
@@ -718,32 +736,59 @@ header{
     color: #666;
 }
 
-.valueIllustration {
-    margin-left: 3rem;
-    font-style: normal;
-
-    display: grid;
-    grid-template-columns: 6.5rem 1fr;
-    column-gap: 2rem;
-}
-
 .valuesFooter{
     display: flex;
     justify-content: center;
 }
 
 .valuesPhoto {
-    width: 60%;
+    width: 70%;
     border-radius: 3px;
     background-color: #000a58;
 }
 
+/* CARRUSEL RESPONSIVE */
+/* TABLET */
+@media screen and (max-width: 767px){
+    .values1::before, .values2::before, .values3::before{
+        top: -2rem;
+        left: -2rem;
+        font-size: 5rem;
+    }
+    .valuesHeader {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    .slide{
+        height: 30rem;
+    }
+    .slider{
+        height: 30rem;
+    }
+    .valuesText {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .sliderBtn {
+        height: 3rem;
+        width: 3rem;
+        font-size: 3rem;
+    }
+    .valuesFooter img{
+        margin: none;
+        width: 100%;
+    }
+    .dots {
+        bottom: 3%;
+    }
+}
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-/* OPERATIONS */
+/* OBJECTIVES */
 
 .objectives {
-    padding: 5rem 5% 0 5%;
+    padding: 4rem 5% 0 5%;
     border-top: 20px solid #000000;
     background-color: #171717;
     color: #cbe3e7;
@@ -864,7 +909,6 @@ header{
     display: grid;
     grid-template-columns: 5rem 1fr;
     column-gap: 3rem;
-    /* row-gap: 0rem; */
 }
 
 .odsHeader {
@@ -882,12 +926,6 @@ header{
     border-radius: 50%;
 }
 
-.odsIcon svg {
-    height: 2.75rem;
-    width: 2.75rem;
-}
-
-
 .odsIcon--2 {
     background-color: #ff963a79;
 }
@@ -895,16 +933,83 @@ header{
     background-color: #fc801480;
 }
 
-@media screen and (max-width: 426px){
+/* OBJECTIVES RESPONSIVE */
+/* TABLET */
+@media screen and (max-width: 769px){
     .odsIcon{
-        width: 5.1rem;
-        height: 5.1rem;
+        width: 5rem;
+        height: 5rem;
+    }
+    .odsIcon img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .odsHeader {
+        font-size: 1.5rem;
     }
     .odsContent {
-        display: none;
+        font-size: 1rem;
+        padding: 0.5rem 2rem 3rem 2rem;
+    }
+
+    .odsContent--active {
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+        column-gap: 1rem;
+    }
+
+    .odsTab {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        transform: translateY(-50%);
+    }
+
+
+    .objectivesTitle {
+        margin: 0 auto 2rem auto;
+    }
+
+    .odsBtn {
+        width: 40%;
+        display: inline-block;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 5px;
+        border-radius: 10px;
+        font-weight: 200;
+    }
+    .odsTab--active {
+        transform: translateY(-66%);
+    }
+
+    .objectivesTextBottom{
+        margin-top: 2rem;
+    }
+    .odsBlueBottom{
+        padding-bottom: 2rem;
+    }
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 426px){
+    .objectivesTitle {
+        margin: 0 auto 2rem auto;
+    }
+    .odsContent{
         align-items: center;
-        font-size: 1.3rem;
-        padding: 0.5rem 1rem 1rem 1rem;
+    }
+    .odsIcon{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .odsHeader {
+        font-size: 1.5rem;
+    }
+    .odsContent {
+        font-size: 1rem;
+        padding: 0.5rem 1rem 2rem 1rem;
     }
     .odsContent--active {
         display: flex;
@@ -914,7 +1019,8 @@ header{
 
 
     .odsTab {
-        margin-right: 0.5rem;
+        margin-right: 0.3rem;
+        margin-left: 0.3rem;
         transform: translateY(-50%);
     }
     .odsTabContainer {
@@ -937,6 +1043,13 @@ header{
     }
     .odsTab--active {
         transform: translateY(-66%);
+    }
+
+    .objectivesTextBottom{
+        margin-top: 2rem;
+    }
+    .odsBlueBottom{
+        padding-bottom: 2rem;
     }
 
 }
@@ -962,7 +1075,6 @@ header{
 
 .faqContainer {
     margin: 0 30px 30px 30px;
-    /* border: 3px solid #ddd; */
     padding: 10px;
     border-radius: 20px;
     padding-left: 60px;
@@ -996,6 +1108,23 @@ header{
     width: 90%;
 }
 
+/* FAQ RESPONSIVE */
+/* MOBILE */
+@media screen and (max-width: 767px){
+    .faqBigCont {
+        padding: 3rem 5% 3rem 5%;
+    }
+    .faqContainer {
+        padding: 10px;
+    }
+    .toggleButton {
+        padding-right: 0.5rem;
+    }
+    .faqContent{
+        font-size: 0.9rem;
+    }
+}
+
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* FORMS E-MAIL */
@@ -1006,7 +1135,7 @@ header{
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    min-height: max-content;
 }
 
 .formsEmailContainer{
@@ -1026,6 +1155,7 @@ header{
 .rowFormsEmail{
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -1076,30 +1206,52 @@ header{
     border-radius: 15px;
 }
 
-@media screen and (max-width: 321px){
+/* FORMS E-MAIL RESPONSIVE */
+/* LAPTOP S */
+@media screen and (max-width: 1025px){
+    .emailRight img{
+        width: 60%;
+    }
     .formsEmailContainer{
-        /* margin: 3% 0 3% 5%; */
-        padding: 2%;
-        background-color: #104d79d6;
-        border-radius: 20px;
+        margin: 3%;
+        left: 1rem;
+    }
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 769px){
+    .formsEmail{
+        background-image: url('./assets/residenciales.png');
+        background-size: cover;
         display: flex;
-        flex-direction: column;
-        
-        justify-content: start;
-        vertical-align: middle;
-        /* position: absolute;
-        left: 4rem; */
+    }
+    .formsEmailContainer{
+        width: 100vw;
+        margin: 5%;
+        position: relative;
+        left: auto;
+    }
+    .emailLeft img{
+        width: 70%;
+    }
+    .emailLeft h1{
+        font-size: 1.1rem;
+    }
+    .emailLeft #message{
+        font-size: 0.8rem;
+    }
+    .emailRight img{
+        display: none;
+    }
+    .rowFormsEmail{
+        align-items: center;
+    }
+    .emailLeft button {
+        padding: 0 10px 0 10px;
+        height: 2rem;
     }
 
-    .formsEmailContainer img{
-        width: 50%;
-
-    }
-    .emailLeft{
-        /* display: flex;
-        justify-content: start; */
-        color: #cbe3e7;
-    }
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -1166,7 +1318,8 @@ header{
 /* INFORMACION EXTRA */
 .legalidad{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 .legalidad h1{
