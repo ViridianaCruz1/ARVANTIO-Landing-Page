@@ -131,17 +131,6 @@ function toggleContent(index) {
 }
 
 ///////////////////////////////////////////////////////////////
-// document.addEventListener("DOMContentLoaded", function () {
-//     // Seleccionamos todas las tarjetas
-//     const tarjetas = document.querySelectorAll(".flashcard");
-
-//     // Añadimos un event listener para cada tarjeta
-//     tarjetas.forEach(tarjeta => {
-//         tarjeta.addEventListener("click", function () {
-//             this.classList.toggle("volteada"); // Alternamos la clase "volteada"
-//         });
-//     });
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
     const tarjetas = document.querySelectorAll(".flashcard");
@@ -153,4 +142,22 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
+});
+
+///////////////////////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active"); // Alterna la visibilidad del menú
+    });
+
+    // Opcional: cerrar el menú al hacer clic en un enlace
+    const navItems = document.querySelectorAll(".navLinks li a");
+    navItems.forEach(item => {
+        item.addEventListener("click", function () {
+            navLinks.classList.remove("active"); // Cierra el menú después de seleccionar una opción
+        });
+    });
 });

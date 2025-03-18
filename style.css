@@ -37,12 +37,26 @@ header{
 }
 
 /* NAVBAR LEFT */
+.navLeft{
+    align-items: center;
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navLeft li{
+    list-style-type: none;
+}
+
 .navLeft a{
     color: #cbe3e7;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: lighter;
-    padding-bottom: 28.5px;
+    padding-bottom: 25.5px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -93,14 +107,47 @@ header{
     background-position: center;
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
 }
 
 /* TABLET */
-@media screen and (max-width: 769px){
-    .navBar .navLeft div{
+/* @media screen and (max-width: 769px){
+    .navBar .navLeft li{
         display: none;
     }
+    .menu.active{
+        display: flex;
+    }
+} */
+
+@media screen and (max-width: 769px){
+    .navLinks {
+        display: none; /* Se oculta el menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 90px; /* Ajuste para que no se superponga con el navbar */
+        left: 0;
+        width: 100%;
+        background-color: #171717;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navLinks.active {
+        display: flex; /* Se muestra cuando se activa */
+    }
+
+    .navBar .navLeft li {
+        display: block; /* Asegura que los elementos sean visibles en el menú desplegado */
+        padding: 15px 0;
+    }
+
+    .navLeft a:hover{
+        color: #e08332;
+        border-bottom: none;
+    }
 }
+
 @media screen and (min-width: 769px){
     .menuToggle{
         display: none;
