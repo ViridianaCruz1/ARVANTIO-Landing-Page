@@ -110,16 +110,6 @@ header{
     cursor: pointer;
 }
 
-/* TABLET */
-/* @media screen and (max-width: 769px){
-    .navBar .navLeft li{
-        display: none;
-    }
-    .menu.active{
-        display: flex;
-    }
-} */
-
 @media screen and (max-width: 769px){
     .navLinks {
         display: none; /* Se oculta el menú por defecto */
@@ -753,12 +743,12 @@ header{
 
 .values1::before, .values2::before, .values3::before{
     position: absolute;
-    top: -5.7rem;
+    top: -4.5rem;
     left: -6.8rem;
     line-height: 1;
-    font-size: 15rem;
+    font-size: 14rem;
     font-family: inherit;
-    z-index: -1;
+    z-index: -0.5;
     color: #000a58;
 }
 .values1::before{
